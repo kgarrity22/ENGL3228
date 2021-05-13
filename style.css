@@ -746,3 +746,7 @@ img, video {
   margin-bottom: 10%;
   font-family: 'Courier New', Courier, monospace;
 }
+
+.left-col p {
+  font-family: 'Courier New', Courier, monospace;
+}
