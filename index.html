@@ -1,33 +1,99 @@
 <!DOCTYPE html>
-<html>
 
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap">
-        <script defer src="main.js"></script>
-        <title>Moon In Her Mouth Recipes: A Cullinary Meditation</title>
-    </head>
 
-    <div class="hero-image">
-        <div class="hero-text">
-            <header><i>Black Joy: Cooking Through Sassafrass, Cypress, & Indigo</i></header>
+<head>
+
+
+    <script src="particles.js"></script>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/786166de9a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril Fatface">
+    <script defer src="main.js"></script>
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"
+        integrity="sha512-pYd2QwnzV9JgtoARJf1Ui1q5+p1WHpeAz/M0sUJNprhDviO4zRo12GLlk4/sKBRUCtMHEmjgqo5zcrn8pkdhmQ=="
+        crossorigin="anonymous"></script>
+
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" type="text/css" href="aos.css" />
+
+</head>
+
+<body>
+
+    <div class="header-space">
+
+        <div id="particles-js" class="hidden"></div>
+        <div class="header-main-text">
+
+            <h1 id="typewriter-text"></h1>
+            <h1 id="moving-text"></h1>
+            <!-- <h1>Hey! I'm Kathleen!</h1> -->
+            <a href="#home">
+                <button class="hidden"><a href="main-page.html">
+
+
+
+                    Click Here to Begin!
+                 
+                   
+                    </a>
+                </button>
+            </a>
         </div>
+
     </div>
 
-    <body>
-        <!---->
+    <div id="non-header-body" class="hidden">
 
 
-    </body>
+        <div class="topnav hidden" id="navbar">
 
-    <footer>
+        </div>
 
-    </footer>
+        <div class="content">
 
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+
+
+
+
+</body>
 
 </html>
 
+<script>/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', 'assets/particles.json', function () {
+        console.log('callback - particles.js config loaded');
+    });</script>
+
+<script>
+    $(document).ready(function () {
+
+        $("section").mouseenter(function () {
+            var id = $(this).attr('id');
+            $('a').removeClass('active');
+            $("[href=#" + id + "]").addClass('active');
+        });
+
+    });
+</script>
