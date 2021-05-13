@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap">
         <script defer src="main.js"></script>
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script type="text/javascript" src="lib/turn.min.js"></script>
+        <!-- jQuery -->
+        
         <title>Moon In Her Mouth Recipes: A Cullinary Meditation</title>
     </head>
 
@@ -28,6 +32,18 @@
             </iframe>
 
             <h3>The Recipes</h3>
+
+
+            <div id="flipbook">
+                <div class="hard"> Turn.js </div>
+                <div class="hard"></div>
+                <div> Page 1 </div>
+                <div> Page 2 </div>
+                <div> Page 3 </div>
+                <div> Page 4 </div>
+                <div class="hard"></div>
+                <div class="hard"></div>
+            </div>
 
         </div>
 
@@ -49,4 +65,12 @@
 
     
 </html>
+
+<script type="text/javascript">
+    $("#flipbook").turn({
+        width: 400,
+        height: 300,
+        autoCenter: true
+    });
+</script>
 
