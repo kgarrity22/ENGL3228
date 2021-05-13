@@ -750,3 +750,6 @@ img, video {
 .left-col p {
   font-family: 'Courier New', Courier, monospace;
 }
+.center {
+  margin-left: 15%;
+}
