@@ -753,3 +753,22 @@ img, video {
 .center {
   margin-left: 15%;
 }
+
+.south img {
+  width: 400px;
+  height: 600px;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+ 
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
